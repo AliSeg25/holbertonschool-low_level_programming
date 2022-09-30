@@ -2,7 +2,7 @@
 
 /**
     * main
-    *descrisption premier C
+    *description - print "Programming is like building a multilingual puzzle
     * Return: Always 0.
     */
 
