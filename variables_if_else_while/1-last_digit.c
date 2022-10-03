@@ -4,7 +4,7 @@
 /**
 *main - premier exercice
 */
-int main(void)/* main debut */
+int main(void)
 {
 	int m;
 	int n;
