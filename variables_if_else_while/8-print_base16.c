@@ -6,14 +6,13 @@
  */
 int main(void)
 {
-/** de 0 a 9 */
+/** variable */
 	int num = 0;
+	char l;
 
 	for (; num <= 9; num++)
 		putchar((num % 10) + '0');
 /** abc */
-	char l;
-
 	for (l = 97; l <= 102; l++)
 		putchar(l);
 	putchar('\n');
