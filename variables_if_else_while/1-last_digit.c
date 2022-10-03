@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *premier exercice
- */
-int main(void)
+*main - premier exercice
+*/
+int main(void)/* main debut */
 {
 	int m;
 	int n;
