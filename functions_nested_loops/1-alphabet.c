@@ -1,19 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include"main.h"
 /**
- * main - deuxieme exercicz
- *
- *amphbet
+ * print_alphabet - Entry point
+ * description - print alphabet
+ * Return: Always 0 (Success)
  */
-
-int main(void)
+void print_alphabet(void)
 {
-
-	char c;
-
-	for (c = 'a'; c <= 'z' ; c++)
-		printf ("%c", c);
-	printf ("\n");
-
-	return (0);
+	char alph;
+	for (alph = 'a'; alph <= 'z'; alph++)
+	{
+		_putchar(alph);
+	}
+	_putchar('\n');
 }
