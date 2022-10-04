@@ -1,0 +1,2 @@
+all: school.c
+gcc  -o pro -wall school.c
