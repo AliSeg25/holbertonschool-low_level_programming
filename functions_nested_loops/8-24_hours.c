@@ -1,24 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
- * je cree un programme qui dira si le chiffre est posétif ou non
+ * jack_bauer - Write a function that prints every minute of the day of Jack Ba
  *
- *
+ * Return: void
  */
 void jack_bauer(void)
 {
-	int hou, min;
+	int H, M;
 
-	for (hou = 0; hou < 24; hou++)
+	for (h = 0; h < 24; h++)
 	{
-		for (min = 0; min < 60; min++)
+		for (m = 0; m <= 59; m++)
 		{
-			_putchar((hou / 10) + '0');
-			_putchar((hou % 10) + '0');
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
 			_putchar(':');
-			_putchar((min / 10) + '0');
-			_putchar((min % 10) + '0');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
 			_putchar('\n');
 		}
 	}
