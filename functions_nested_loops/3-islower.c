@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include"main.h"
 #include "main.h"
 /**
- * je cree un programme qui va faire la difference entre une minuscule ou non
- * si ces en miniscule il return 1
- * si ces une majuscule il return 0
+ * _islower - Write a function that checks for lowercase character.
+ * @c:@c:bhbh
+ * Return: 1 si c is caractere return 0 sinon
  */
 int _islower(int c)
 {
