@@ -2,28 +2,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * je cree un programme qui dira si le chiffre est posétif ou non
- *
- *
+ * print_last_digit - Write a function that prints the last digit of a number.
+ * @nb: variable du nombre
+ * Return: a (0]
  */
 int print_last_digit(int nb)
 {
-	if (nb <= -10)
-	{
-		nb = nb % 10 * -1;
-		_putchar(nb + '0');
-	} else if (nb >= 10)
-	{
-		nb = nb % 10;
-		_putchar(nb + '0');
-	} else if (nb > -1)
-	{
-		nb = nb;
-		_putchar(nb + '0');
-	} else
-	{
-		nb = nb + -1;
-		_putchar(nb + -1 + '0');
-	}
-	return (nb);
+	int n;
+
+	if (nb > 0)
+		n = nb % 10;
+	else
+		n = -1 * (nb % 10);
+	_putchar((n % 10) + '0');
+	return (0);
 }
