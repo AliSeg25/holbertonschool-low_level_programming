@@ -2,15 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * je cree un programme qui dira si le chiffre est posétif ou non
- *
- *
+ * print_sign - Write a function that prints the sign of a number.
+ * @n: la varible qui va nous servir
+ * Return: 1 ou 2 ou 0
  */
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar(43);
+		_putchar('+');
 		return (1);
 	}
 	else if (n == 0)
