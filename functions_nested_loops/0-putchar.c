@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - return (0) premier exercicz putchar
+ * main - Putchar
  *
- * return-(0)
+ * Return:(0)
  */
 int main(void)
 {
