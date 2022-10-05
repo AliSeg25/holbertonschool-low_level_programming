@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * je cree un programme qui va faire la difference entre un caractere ou non
- * si ces en caractere il return 1
- * si non il return 0
+ * _isalpha - Write a function that checks for alphabetic character.
+ * @c: ces la variable qui va nous servir a verifie
+ * Return: Always 0 (nice)
  */
 int _isalpha(int c)
 {
