@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * je cree un programme qui dira si le chiffre est posétif ou non
- *
- *
+ * add - Write a function that adds two integers and returns the result.
+ * @nb1: variable 1
+ * @nb2: variable 2
+ * Return: (nb1 , nb2)
  */
 int add(int nb1, int nb2)
 {
