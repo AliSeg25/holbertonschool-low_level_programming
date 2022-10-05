@@ -1,19 +1,20 @@
 #include "main.h"
 /**
- * imprimer 1à fois l'halphabet
+ *print_alphabet_x10 - programme x10
+ * imprimer 1àlphabet 10 fois l'halphabet
  * revnir a la ligne une fois les instruction fini
  */
 void print_alphabet_x10(void)
 {
-	int alph, time = 0;
+	int let, x10 = 0;
 
-	while (time < 10)
+	while (x10 < 10)
 	{
-		for (alph = 97; alph <= 122; alph++)
+		for (let = a; let <= z; let++)
 		{
-			_putchar(alph);
+			_putchar(let);
 		}
-		time++;
+		x10++;
 		_putchar('\n');
 	}
 }
