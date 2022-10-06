@@ -19,6 +19,6 @@ int main(void)
 		else
 			printf("%d ", a);
 	}
-	putchar('\n');
+	printf("Buzz\n");
 	return (0);
 }
