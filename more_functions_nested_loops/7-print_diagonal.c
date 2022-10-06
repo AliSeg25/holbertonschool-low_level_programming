@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * print_diagonal - 7. I feel like I am diagonally parked in a parallel universe
+ * print_diagonal - 7. I feel like  am diagonally parked in a parallel universe
  * @n: Variable
  * Return: (\n);
  */
 void print_diagonal(int n)
 {
-	int l= 0;
-	int m= 0;
+	int l = 0;
+	int m = 0;
 
 	if (n > 0)
 	{
