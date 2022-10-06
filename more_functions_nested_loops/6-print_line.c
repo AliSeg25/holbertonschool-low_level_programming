@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_line - Write a function that draws a straight line in the terminal.
- * @ligne: ligne _______
+ * @n: ligne _______
  * Return: (\n)
  */
 void print_line(int n)
