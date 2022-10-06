@@ -4,7 +4,7 @@
  * @ligne: ligne _______
  * Return: (\n)
  */
-void print_line(int ligne)
+void print_line(int n)
 {
 	int ligne = 0;
 
