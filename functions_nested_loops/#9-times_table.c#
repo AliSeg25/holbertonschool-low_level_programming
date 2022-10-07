@@ -1,0 +1,38 @@
+#include "main.h"
+/**
+ * main - task9
+ *
+ * Return timetable
+ */
+void times_table(void)
+{
+	int nb = 0;
+	int diviser = 0;
+	int resul = 0;
+
+	for (nb = 0; nb < 10; nb++)
+	{
+		for (diviser = 0; diviser < 10; diviser++)
+		{
+			resul = nb * divisor;
+			if (resul > 9)
+			{
+				_putchar((resultado / 10) + '0');
+				_putchar((resultado % 10) + '0');
+			}
+			else if (divisor != 0)
+			{
+				_putchar(' ');
+				_putchar(resultado + '0');
+			}
+			else
+				_putchar(resultado + '0');
+			if (divisor != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
+	}
+}

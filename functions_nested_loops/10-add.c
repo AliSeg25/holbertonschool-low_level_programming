@@ -1,13 +1,31 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
- * add - Write a function that adds two integers and returns the result.
- * @nb1: variable 1
- * @nb2: variable 2
- * Return: (nb1 , nb2)
+ * print_triangle - Write a function that prints a triangle, followed by a new
+ *
+ * @size: size of the triangle.
  */
-int add(int nb1, int nb2)
+
+void print_triangle(int size)
 {
-	return (nb1 + nb2);
+	int i = 1;
+	int j = 0;
+
+	if (size > 0)
+	{
+		for (i = 1; i <= size; i++)
+		{
+			for (j = 0; j < size - i; j++)
+			{
+				_putchar(' ');
+			}
+			for (j = 0; j < i; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
+	} else
+	{
+		_putchar('\n');
+	}
 }
