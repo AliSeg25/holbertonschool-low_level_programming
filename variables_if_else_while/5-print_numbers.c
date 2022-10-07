@@ -6,6 +6,11 @@
  */
 int main(void)
 {
-	printf("0123456789\n");
-	return (0);
+	char c = '1';
+
+	for (c = '1'; c <= '9'; c++)
+		putchar (c);
+		putchar(\n)
+return (0);
+
 }
