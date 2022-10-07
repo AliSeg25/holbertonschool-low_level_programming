@@ -6,6 +6,10 @@
 */
 int main(void)
 {
-	printf("abcdefghijklmnopqrstuvwxyz\n");
+	char n;
+
+	for (n = 'a'; n < 'z'; n++)
+		putchar(n);
+
 	return (0);
 }
