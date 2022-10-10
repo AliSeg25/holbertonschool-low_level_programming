@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include"main.h"
+#include "main.h"
 /**
  * reset_to_98 - Write a function that takes a pointer to an int as parameter a
  * @n: ces la varaible
@@ -8,6 +8,6 @@
  */
 void reset_to_98(int *n)
 {
-	int *n = 98;
+	*n = 98;
 
 }
