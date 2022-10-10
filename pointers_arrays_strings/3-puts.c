@@ -6,7 +6,7 @@
  */
 void _puts(char *str)
 {
-char str[] = "I do not fear computers. I fear the lack of them ";
+	str;
 
 	printf("%s", str);
 
