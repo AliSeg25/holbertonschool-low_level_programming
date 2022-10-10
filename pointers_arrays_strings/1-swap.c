@@ -9,7 +9,7 @@
  */
 void swap_int(int *a, int *b);
 {
-	int echange = 0;
+	int echange;
 
 	echange = *a;
 	*a = *b;
