@@ -2,7 +2,7 @@
 /**
  * string_toupper - Write a function that reverses a string.
  * @as: pointeur
- * Return: (s)
+ * Return: (as)
  */
 char *string_toupper(char *as)
 {
