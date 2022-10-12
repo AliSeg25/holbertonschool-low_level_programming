@@ -3,22 +3,29 @@
  * _strpbrk - Write a function that gets the length of a prefix substring.
  * @s: la chaine a rechercher
  * @accept: la chaine qui recherche
- * Return: (s) ou 0
+ * Return: (r)
  */
 
 char *_strpbrk(char *s, char *accept)
 {
 	int i = 0;
 	int j = 0;
+	int r = 0;
 
 	while (s[i] != '\0')
 	{
-		for (j = 0; accept[j]; j++)
+		if (s[i] != 32)
 		{
-			if (*s == accept[j])
-				return (s);
+			for (j = 0; accept[j] != '\0'; j++)
+			{
+				if (s[i] == accept[j])
+					r++;
+			}
+
 		}
+		else
+			retourn(r);
 		s++;
 	}
-	return (0);
+	return (r);
 }
