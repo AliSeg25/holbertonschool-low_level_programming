@@ -1,18 +1,16 @@
 #include "main.h"
 /**
- * _strpbrk - Write a function that gets the length of a prefix substring.
+ * _strspn - Write a function that gets the length of a prefix substring.
  * @s: la chaine a rechercher
  * @accept: la chaine qui recherche
  * Return: (r)
  */
-
-char *_strpbrk(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
-	int j = 0;
+	int i, j;
 	int r = 0;
 
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] != ' ')
 		{
@@ -21,11 +19,10 @@ char *_strpbrk(char *s, char *accept)
 				if (s[i] == accept[j])
 					r++;
 			}
-
 		}
 		else
 			return (r);
-		s++;
+
 	}
 	return (r);
 }
