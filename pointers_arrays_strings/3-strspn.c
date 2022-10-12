@@ -14,7 +14,7 @@ char *_strpbrk(char *s, char *accept)
 
 	while (s[i] != '\0')
 	{
-		if (s[i] != 32)
+		if (s[i] != ' ')
 		{
 			for (j = 0; accept[j] != '\0'; j++)
 			{
@@ -24,7 +24,7 @@ char *_strpbrk(char *s, char *accept)
 
 		}
 		else
-			retourn(r);
+			return (r);
 		s++;
 	}
 	return (r);
