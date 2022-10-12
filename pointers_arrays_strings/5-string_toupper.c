@@ -1,18 +1,18 @@
 #include "main.h"
 /**
  * string_toupper - Write a function that reverses a string.
- * @al: pointeur
- * Return: (al)
+ * @s: pointeur
+ * Return: (s)
  */
-char *string_toupper(char *al)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
-	while (al[i] != '\0')
+	while (s[i] != '\0')
 	{
-	if (al[i] >= 'a' && al[i] <= 'z')
-		al[i] -= 32;
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] -= 32;
 		i++;
 	}
-	return (al);
+	return (s);
 }
