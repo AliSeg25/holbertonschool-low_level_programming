@@ -11,7 +11,7 @@ char *string_toupper(char *al)
 	while (al[i] != '\0')
 	{
 	if ((al[i]) >= 'a' && (al[i]) <= 'z')
-		(al[i]) = ('a' - 'A');
+		(al[i] = ('a' - 'A'));
 		i++;
 	}
 	return (al);
