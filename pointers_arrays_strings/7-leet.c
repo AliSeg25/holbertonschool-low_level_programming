@@ -12,7 +12,7 @@ char *leet(char *st)
 	char a[] = {'a', 'e', 'o', 't', 'l'};
 	char n[] = {'4', '3', '0', '7', '1'};
 
-	while (*st '\0')
+	while (*st)
 	{
 		for (i = 0; i < 5; i++)
 		{
