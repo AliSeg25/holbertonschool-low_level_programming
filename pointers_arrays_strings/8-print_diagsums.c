@@ -1,4 +1,5 @@
 #include"main.h"
+#include <stdio.h>
 /**
  * print_diagsums - Write a function that prints the sum of the two diagona
  * @a: pointer
