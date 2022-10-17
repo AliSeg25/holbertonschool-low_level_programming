@@ -1,1 +1,5 @@
-0000000000000000 T _isupper
+int _isupper(int c)
+{
+
+}
+
