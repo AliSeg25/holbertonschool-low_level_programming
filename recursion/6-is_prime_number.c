@@ -7,7 +7,7 @@
  * Return: si nombre premier (1) sinon (0)
  */
 
-int is2(int n, int b)
+int is2(int n, int i)
 {
 	if (n <= 1 || n % i == 0)
 		return (0);
