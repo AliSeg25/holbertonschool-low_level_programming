@@ -3,7 +3,7 @@
 /**
  * is2 - fonction qui va chercher si n est un nombre premier
  * @n: variable a verifie
- * @b: nombre qui teste
+ * @i: nombre qui teste
  * Return: si nombre premier (1) sinon (0)
  */
 
