@@ -1,12 +1,17 @@
 #include <stdio.h>
 /**
- * main - Write a program that prints the number of arguments passed into it.
+ * main - Write a program that prints all arguments it receives.
  * @argc: entier type int
- * @argv: pointeur type char
+ * @argv: pointeur
  * Return: (0)
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
-	return (0);
+    int i;
+
+    for (i = 0; i < argc; i++)
+    {
+        printf("%s\n", argv[i]);
+    }
+    return (0);
 }
