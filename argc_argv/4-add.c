@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i, j;
+	int r = 0;
 
 	if (argc < 2)
 	{
@@ -29,7 +30,8 @@ int main(int argc, char *argv[])
 			}
 
 		}
-
+		r = atoi(agv[i]);
 	}
+	printf("%d\n", r);
 	return (0);
 }
