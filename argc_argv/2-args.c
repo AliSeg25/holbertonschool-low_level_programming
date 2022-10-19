@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	for (i = 0; argc[i] != '\O'; i++)
+	for (i = 0; argc[i] != '\0'; i++)
 	{
 		printf("%s\n", argv[i]);
 	}
