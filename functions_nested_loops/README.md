@@ -1,1 +1,1 @@
-le 3eme projet C - Functions, nested loops
+Le 3eme projet C - Functions, nested loops
