@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * alloc_grid -
- * @width:
- * @height:
- * Return:
+ * alloc_grid - Écrivez une fonction qui renvoie un pointeur vers un tableau2D
+ * @width:largeur
+ * @height:hauteur
+ * Return: (ar) ou (NULL)
  */
 
 int **alloc_grid(int width, int height)
@@ -24,7 +24,7 @@ int i, j;
 	for (i = 0; i < height; i++)
 	{
 		ar[i] = (int *)malloc(width * sizeof(int));
-/**
+
 		if (ar[i] == NULL)
 		{
 			for (j = 0; j < height; j++)
@@ -32,7 +32,7 @@ int i, j;
 			free(ar);
 			return (NULL);
 		}
-*/
+
 		for (j = 0; j < width; j++)
 		{
 			ar[i][j] = 0;
