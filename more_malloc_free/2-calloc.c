@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _calloc - Écrivez une fonction qui alloue de la mémoire pour un tableau, en utilisant malloc.
+ * _calloc - Écrivez une fonction qui alloue de la mémoire pour un tableau
  * @nmemb: le nombre d'element
  * @size: la taille de l'ellement a allouer
  * Return: (null) ou (ar)
