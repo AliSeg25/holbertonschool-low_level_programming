@@ -35,24 +35,18 @@ char *str_concat(char *s1, char *s2)
 
 	r = i + j + 1;
 
-	ar = malloc(r*sizeof(char));
+	ar = malloc(r * sizeof(char));
 
 	if (ar == NULL)
-	{
 		return (NULL);
-	}
 
-	for(k = 0; k < i; k++)
-	{
+	for (k = 0; k < i; k++)
 		ar[k] = s1[k];
-	}
 
-	for(k = 0; k < j; k++)
-	{
+	for (k = 0; k < j; k++)
 		ar[k + i] = s2[k];
-	}
 
-	ar = '\0';
+	s[i + j] = '\0';
 
 	return (ar);
 }
