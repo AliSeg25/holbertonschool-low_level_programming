@@ -46,7 +46,7 @@ char *str_concat(char *s1, char *s2)
 	for (k = 0; k < j; k++)
 		ar[k + i] = s2[k];
 
-	s[i + j] = '\0';
+	ar[i + j] = '\0';
 
 	return (ar);
 }
