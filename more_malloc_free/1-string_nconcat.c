@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 /**
  * string_nconcat - concatene deux strings
  * @s1: la premier partie a copier
