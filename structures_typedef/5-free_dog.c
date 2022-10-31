@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib.h>
+65;6003;1c#include <stdlib.h>
 /**
  * free_dog - frees dogs
  * @d: the structure to free
@@ -11,6 +11,6 @@ if (d != NULL)
 {
 free(d->name);
 free(d);
- free(d->owner);
+free(d->owner);
 }
 }
