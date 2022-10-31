@@ -1,5 +1,5 @@
 #include "dog.h"
-65;6003;1c#include <stdlib.h>
+#include <stdlib.h>
 /**
  * free_dog - frees dogs
  * @d: the structure to free
