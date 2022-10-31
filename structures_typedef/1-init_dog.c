@@ -1,11 +1,11 @@
-#include"main.h"
+#include "main.h"
 #include "dog.h"
 /**
- * init_dog -  configuration des information du chien.
- * @d: ces un poiteur sur le chien.
- * @name: nom chien.
- * @age: age chien.
- * @owner: propriaitaire chien
+ * init_dog - cinitialize a dog data structure.
+ * @d: dog pointer.
+ * @name: dog's name.
+ * @age: dog's age.
+ * @owner: dog's owner
  *
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
