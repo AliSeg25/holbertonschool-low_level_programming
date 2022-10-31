@@ -1,87 +1,87 @@
-include "dog.h"
+#include "dog.h"
+#include <stdio.h>
 #include <stdlib.h>
+
+
 /**
-  * new_dog - creates a new struct of type dog
-  * @name: son nom
-  * @age: struct parameter age
-  * @owner: struct parameter owner
-  * Return: returns pointer to buffer of datatype dog
-  */
+ * _strcpy - copies a string
+ * Description: copies a string
+ * @dest: destination
+ * @src: source
+ * Return: pointer to string copied
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i]; i++)
+		dest[i] = src[i];
+
+	dest[i] = '\0';
+
+	return (dest);
+}
+
+/**
+ * _strlen - returns length of str
+ * Description: returns length of str
+ * @str: string to get length from
+ * Return: length of str
+ */
+
+int _strlen(char *str)
+{
+	int length = 0;
+
+	while (*str++)
+		length++;
+
+	return (length);
+}
+
+/**
+ * new_dog - creates a new dog variable
+ * Description: creates a new dog variable
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ * Return: Null if function fails
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	dog_t *dawg;
 
-dog_t *tayson;
+	if (name == NULL || age < 0 || owner == NULL)
+		return (NULL);
 
-if (name == NULL || age > 0 || owner == NULL)
-return (NULL);
-
-tayson->name = malloc((_strlen(name) + 1) sizeof(char));
-if (tayson->name == NULL)
-{
-free(tayson->name);
-return (NULL);
-}
-
-tayson = malloc((_strlen(age) + 1) sizeof(int));
-if (tayson == NULL)
-{
-free(tayson);
-free(tayson->name);
-return (NULL);
-}
-
-tayson->owner = malloc((_strlen(owner) + 1) sizeof(char));
-if (tayson->owner == NULL)
-{
-free(tayson->owner);
-free(tayson);
-free(tayson->name);
-return (NULL);
-}
-
-tayson->name = _strncpy(tayson->name, name);
-tayson->age = _strncpy(tayson->age, age);
-tayson->owner = _strncpy(tayson->owner, owner);
-
-}
-/**
- * _strncpy - cpoies n bytes of src to the dest string
- * @src: chaine a copie
- * @dest: chaine coller
- * Return: (dest)
- */
-char *_strncpy(char *dest, char *src)
-{
-	int i = 0;
-
-	while (src[i] != '\0')
+	dawg = malloc(sizeof(dog_t));
+	if (dawg == NULL)
 	{
-		dest[i] = src[i];
-		i++;
+		free(dawg);
+		return (NULL);
 	}
 
-	while (i < n)
+	dawg->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if (dawg->name == NULL)
 	{
-		dest[i] = '\0';
-		i++;
+		free(dawg->name);
+		free(dawg);
+		return (NULL);
+	}
+	dawg->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (dawg->owner == NULL)
+	{
+		free(dawg->name);
+		free(dawg->owner);
+		free(dawg);
+		return (NULL);
 	}
 
-		return (dest);
-}
-/**
- * _strlen - Write a function that returns the length of a string.
- * @s: variable
- * Return: (longueur)
- */
-int _strlen(char *s)
-{
-int longueur = 0;
+	dawg->name = _strcpy(dawg->name, name);
+	dawg->age = age;
+	dawg->owner = _strcpy(dawg->owner, owner);
 
-while (*s != '\0')
-{
-longueur++;
-s++;
-}
-
-return (longueur);
+	return (dawg);
 }
