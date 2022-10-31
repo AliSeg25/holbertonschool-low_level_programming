@@ -12,5 +12,8 @@
 		float age;
 		char *owner;
 	};
-
+/**
+ * protype
+ */
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif /* DOG_H_INCLUDED*/
