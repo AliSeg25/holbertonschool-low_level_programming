@@ -1,3 +1,4 @@
+#include"main.h"
 #include "dog.h"
 /**
  * init_dog -  configuration des information du chien.
