@@ -1,3 +1,4 @@
+#include "dog.h"
 /**
  * init_dog -  configuration des information du chien.
  * @d: ces un poiteur sur le chien.
