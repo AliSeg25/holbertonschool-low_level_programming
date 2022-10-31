@@ -8,9 +8,9 @@
 */
 struct dog
 {
-char name[50];
+char *name;
 float age;
-char owner;
+char *owner;
 };
 
 #endif /* DOG_H_INCLUDED*/
