@@ -6,7 +6,7 @@
  * @n: nombres arguments
  * @separator: Imprimer ","
  */
-void print_numbers(const char *separator, const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list arg;
 unsigned int i;
