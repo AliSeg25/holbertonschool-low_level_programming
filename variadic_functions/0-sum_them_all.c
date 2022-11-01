@@ -8,19 +8,20 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-unsigned int r = 0;
-unsigned int i = 0;
-va_list arg;
+	unsigned int r = 0;
+	unsigned int i = 0;
+	va_list arg;
 
-if (n == 0)
-return (0);
+	if (n == 0)
+	return (0);
 
-va_start(arg, n);
+	va_start(arg, n);
 
-for (i = 0; i < n; i++)
-r += va_arg(arg, int);
-va_end(arg);
+	for (i = 0; i < n; i++)
+		r += va_arg(arg, int);
+	
+	va_end(arg);
 
-return (r);
+	return (r);
 
 }
