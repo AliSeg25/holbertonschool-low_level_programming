@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
- * sum_them_all - fonction qui imprime des nombres.
+ * print_numbers - fonction qui imprime des nombres.
  * @n: nombres arguments
  * @separator: Imprimer ","
  */
