@@ -16,11 +16,12 @@ va_start(arg, n);
 
 for (i = 0; i < n; i++)
 {
-if (va_arg(arg, char *) == NULL)
+va = va_arg(arg, char *)
+if (va == NULL)
 printf("(nil)");
 
 else
-printf("%s", va_arg(arg, char *));
+printf("%s", va);
 
 if (separator != NULL && i != (n - 1))
 printf("%s", separator);
