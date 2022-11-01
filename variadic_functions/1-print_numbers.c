@@ -1,5 +1,5 @@
 #include <stdio.h>
-65;6003;1c#include <stdlib.h>
+#include <stdlib.h>
 #include <stdarg.h>
 /**
  * sum_them_all - fonction qui imprime des nombres.
