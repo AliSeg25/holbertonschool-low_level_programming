@@ -19,7 +19,6 @@ void print_all(const char * const format, ...)
 		type = format[i];
 
 		switch (type)
-
 		{
 		case 'c':
 			printf("%c", va_arg(arg, int));
@@ -40,7 +39,6 @@ void print_all(const char * const format, ...)
 
 			printf("%s", str);
 			break;
-
 		}
 
 		if ((type == 'c' || type == 'i' || type == 's' || type == 'f')
