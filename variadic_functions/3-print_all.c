@@ -9,12 +9,12 @@
 void print_all(const char * const format, ...)
 {
 	va_list arg;
-	va_start(arg, format);
 	int i = 0;
 	char *str;
 	char type; /*la variable contenir le type de format de [i]*/
 
-	while (format[i] != NULL && format[i] != '\0')
+	va_start(arg, format);
+	while (format != NULL && format[i] != '\0')
 	{
 		type = format[i];
 
@@ -23,12 +23,15 @@ void print_all(const char * const format, ...)
 		{
 		case 'c':
 			printf("%c", va_arg(arg, int));
+			break;
 
 		case 'i':
 			printf("%d", va_arg(arg, int));
+			break;
 
 		case 'f':
 			printf("%f", va_arg(arg, double));
+			break;
 
 		case 's':
 			str = va_arg(arg, char*);
@@ -36,10 +39,13 @@ void print_all(const char * const format, ...)
 				str = "(nil)";
 
 			printf("%s", str);
+			break;
 
 		}
 
-		if (type[i] == c || type[i] == i || type[i] == s|| type[i] == f)
+		if (type == 'c' || type == 'i' || type == 's' || type == 'f'
+		    && format[i + 1])
+			printf(", ");
 		i++;
 	}
 }
