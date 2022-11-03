@@ -11,6 +11,7 @@ int void (int argc, char *argv[])
 	int num1;
 	int num2;
 	int res;
+	char *s;
 
 	if (argc != 4)
 	{
@@ -20,18 +21,17 @@ int void (int argc, char *argv[])
 
 	num1 = atoi(agrv[1]);
 	num2 = atoi(agrv[3]);
-	op = get_op_func(argv[2]);
+	s = atoi(argv[2]);
 
-	if (op == null)
+	if (s == null)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
 
-	res = op(num1, num2);
-	printf("%d", res);
-
+	result = get_op_func(s)(num1, num2);
+	printf("%d\n", result);
 	return (0);
 
 
