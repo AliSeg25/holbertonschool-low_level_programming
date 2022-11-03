@@ -19,8 +19,8 @@ int main (int argc, char *argv[])
 		exit(98);
 	}
 
-	num1 = atoi(agrv[1]);
-	num2 = atoi(agrv[3]);
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 	s = atoi(argv[2]);
 
 	if (s == null)
