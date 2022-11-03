@@ -1,5 +1,5 @@
 #include "3-calc.h"
-/**
+65;6003;1c/**
  * main - This file should contain your main function only.
  * @argv: argv argument
  * @argc: argc nombre d'argument
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 
 
-	if (argv[2][1] != '\0')
+	if (argv[2][1] != '\0' && get_op_func(s) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
