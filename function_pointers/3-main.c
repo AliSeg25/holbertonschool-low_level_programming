@@ -1,9 +1,8 @@
 #include "3-calc.h"
 /**
- * main - main
- * Description: main function
- * @argv: argv
- * @argc: argc
+ * main - This file should contain your main function only.
+ * @argv: argv argument
+ * @argc: argc nombre d'argument
  * Return: (0)
  */
 int main (int argc, char *argv[])
