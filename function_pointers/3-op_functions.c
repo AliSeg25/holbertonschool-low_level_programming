@@ -13,7 +13,7 @@ int op_add(int a, int b)
 }
 
 /**
- *op_add - soustraction
+ *op_sub - soustraction
  *
  *@a: premier nombre
  *@b: second nombre
@@ -26,7 +26,7 @@ int op_sub(int a, int b)
 }
 
 /**
- *op_add - multiplication
+ *op_mul - multiplication
  *
  *@a: premier nombre
  *@b: second nombre
@@ -39,7 +39,7 @@ int op_mul(int a, int b)
 }
 
 /**
- *op_add - division
+ *op_div - division
  *
  *@a: premier nombre
  *@b: second nombre
@@ -58,14 +58,14 @@ int op_div(int a, int b)
 
 
 /**
- *op_add - Modulo
+ *op_mod - Modulo
  *
  *@a: premier nombre
  *@b: second nombre
  *
  * Return: le résultat de a % b;
  */
-int op_div(int a, int b)
+int op_mod(int a, int b)
 {
 	if (b == 0)
 	{

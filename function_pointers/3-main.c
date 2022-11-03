@@ -21,17 +21,17 @@ int main (int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	s = atoi(argv[2]);
+	s = (argv[2]);
 
-	if (s == null)
+	if (s == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
 
-	result = get_op_func(s)(num1, num2);
-	printf("%d\n", result);
+	res = get_op_func(s)(num1, num2);
+	printf("%d\n", res);
 	return (0);
 
 
