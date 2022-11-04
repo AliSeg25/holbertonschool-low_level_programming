@@ -2,48 +2,71 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
+ * prin_int - imprimer un entier
+ * @arg: argument
+ * Return: ()
+*/
+void prin_int(va_list arg)
+{
+	printf("%d", va_arg(arg, int));
+}
+
+/**
+ * prin_float - imprimer un float
+ * @arg: argument
+ * Return: ()
+*/
+void prin_float(va_list arg)
+{
+	printf("%f", va_arg(arg, double));
+}
+
+/**
+ * prin_string - imprimer un string
+ * @arg: argument
+ * Return: ()
+ */
+void prin_string(va_list arg)
+{
+	printf("%s", va_arg(arg, char*));
+}
+
+/**
  * print_all - imprimer n'importe quoi.
  * @format: Le type
  * @...: nombre d 'argument
  */
 void print_all(const char * const format, ...)
 {
+	prin_t apf[] = {
+		{"c", prin_char},
+		{"i", prin_int},
+		{"f", prin_float},
+		{"s", prin_string},
+		{NULL, NULL}
+		};
+
 	va_list arg;
-	int i = 0;
-	char *str;
-	char type; /*la variable contenir le type de format de [i]*/
 
 	va_start(arg, format);
-	while (format != NULL && format[i] != '\0')
+
+	int i = 0;
+	int j = 0;
+
+	while (format && format[i] != '\0') /*format = ceis utilisateur*/
 	{
-		type = format[i];
-
-		switch (type)
+		while (apf[j].p)/*on parcoure le tableau de structure apf*/
 		{
-		case 'c':
-			printf("%c", va_arg(arg, int));
-			break;
-
-		case 'i':
-			printf("%d", va_arg(arg, int));
-			break;
-
-		case 'f':
-			printf("%f", va_arg(arg, double));
-			break;
-
-		case 's':
-			str = va_arg(arg, char*);
-			if (str == NULL)
-				str = "(nil)";
-
-			printf("%s", str);
-			break;
+			if (*apf[j].p == format[i])/*on compare la valeur*/
+			{
+				apf[j].f(arg);/*La on appel la bonne fonction*/
+				if (format[i + 1] == '\0')
+					break;
+				printf(", ");
+			}
+			j++;
 		}
-
-		if ((type == 'c' || type == 'i' || type == 's' || type == 'f')
-		    && format[i + 1])
-			printf(", ");
+		j = 0;
 		i++;
 	}
 	printf("\n");
