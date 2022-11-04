@@ -3,6 +3,16 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
+ * prin_char - imprimer un entier
+ * @arg: argument
+ * Return: ()
+ */
+void prin_char(va_list arg)
+{
+	printf("%c", va_arg(arg, int));
+}
+
+/**
  * prin_int - imprimer un entier
  * @arg: argument
  * Return: ()
@@ -29,7 +39,11 @@ void prin_float(va_list arg)
  */
 void prin_string(va_list arg)
 {
-	printf("%s", va_arg(arg, char*));
+	varg = va_arg(arg, char*);
+	if (varg == NULL)
+		printf("(nil)");
+
+	printf("%s", varg);
 }
 
 /**
