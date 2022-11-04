@@ -64,11 +64,10 @@ void print_all(const char * const format, ...)
 		};
 
 	va_list arg;
-
-	va_start(arg, format);
-
 	int i = 0;
 	int j = 0;
+
+	va_start(arg, format);
 
 	while (format && format[i] != '\0') /*format = ceis utilisateur*/
 	{
