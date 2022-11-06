@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+65;6003;1c#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 
 	while (format && format[i] != '\0') /*format = ceis utilisateur*/
 	{
-		while (apf[j].p != '\0')/*on parcoure le tableau de structure apf*/
+		while (apf[j].p != NULL)/*on parcoure le tableau de structure apf*/
 		{
 			if (*apf[j].p == format[i])/*on compare la valeur*/
 			{
