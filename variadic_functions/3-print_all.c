@@ -70,9 +70,9 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 
-	while (format && format[i] != '\0') /*format = ceis utilisateur*/
+	while (format[i] != '\0') /*format = ceis utilisateur*/
 	{
-		while (apf[j].p)/*on parcoure le tableau de structure apf*/
+		while (apf[j].p != NULL)/*on parcoure le tableau de structure apf*/
 		{
 			if (*apf[j].p == format[i])/*on compare la valeur*/
 			{
