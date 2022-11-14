@@ -19,7 +19,7 @@ list_t *add_node(list_t **head, const char *str)
 	newstr = strdup(str);
 	if (newstr == NULL)
 	{
-		free(newstr);
+		free(new);
 		return (NULL);
 	}
 
@@ -30,7 +30,7 @@ list_t *add_node(list_t **head, const char *str)
 	newli->len = l;
 	newli->next = *head;
 
-/**	*head = newli;*/
+	*head = newli;
 
 	return (newli);
 }
