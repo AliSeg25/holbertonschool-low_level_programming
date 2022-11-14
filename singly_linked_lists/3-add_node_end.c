@@ -1,5 +1,5 @@
 #include "lists.h"
-65;6003;1c#include <string.h>
+#include <string.h>
 /**
  * add_node_end - new node at the end
  * @head: a pointer to the first node in the list
@@ -33,7 +33,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	*head = newli;
 
-	if (*head !=  NULL)
+	if (*head ==  NULL)
 	{
 		fin = *head;
 
