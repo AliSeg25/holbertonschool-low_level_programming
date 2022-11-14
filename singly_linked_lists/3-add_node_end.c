@@ -31,10 +31,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	newli->len = l;
 	newli->next = *head;
 
-	if (*head ==  NULL)
 	*head = newli;
 
-	else
+	if (*head ==  NULL)
 	{
 		fin = *head;
 
