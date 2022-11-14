@@ -19,7 +19,7 @@ list_t *add_node(list_t **head, const char *str)
 	newstr = strdup(str);
 	if (newstr == NULL)
 	{
-		free(new);
+		free(newli);
 		return (NULL);
 	}
 
