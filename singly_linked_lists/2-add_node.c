@@ -23,12 +23,14 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	while (str[l])
-		l++;
+/**	while (str[l])
+	l++;*/
 
 	newli->str = newstr;
-	newli->len = l;
+/**	newli->len = l;*/
 	newli->next = *head;
+
+	*head = newli;
 
 	return (newli);
 }
