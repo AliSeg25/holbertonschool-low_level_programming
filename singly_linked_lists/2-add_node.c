@@ -23,7 +23,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	newli->str = newstr;
-	newli->next = head;
+	newli->next = *head;
 
 	return (newli);
 }
