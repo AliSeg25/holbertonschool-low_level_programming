@@ -1,3 +1,5 @@
+#include "lists.h"
+#include <string.h>
 /**
  * add_node - new node at the beginning
  * @head: a pointer to the first node in the list
@@ -18,5 +20,5 @@ list_t *add_node(list_t **head, const char *str)
 	newli->str = newstr;
 	newli->next = head;
 
-	return (new);
+	return (newli);
 }
