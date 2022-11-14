@@ -29,7 +29,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	newli->str = newstr;
 	newli->len = l;
-	newli->next = *head;
+	newli->next = NULL;
 
 	if (*head == NULL)
 		*head = newli;
