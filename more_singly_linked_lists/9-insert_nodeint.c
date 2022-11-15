@@ -1,5 +1,5 @@
 #include "lists.h"
-65;6003;1c/**
+/**
  * *insert_nodeint_at_index - Write a function that inserts a new node at a
  * given position.
  * @head: A pointer.
