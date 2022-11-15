@@ -1,10 +1,10 @@
 #include "lists.h"
 /**
- * delete_nodeint_at_index - Write a function that inserts a new node at a given
+ * delete_nodeint_at_index - Write a function that inserts anew node at a given
  * position.
  * @head: A pointer.
  * @index: The index.
- * Return:
+ * Return: (1) ou (-1)
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -33,7 +33,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	temp = copy->next;
 	copy->next = temp->next;
-	free (temp);
+	free(temp);
 
 	return (1);
 }
