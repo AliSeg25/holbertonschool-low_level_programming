@@ -1,5 +1,5 @@
 #include <stdio.h>
-65;6003;1c#include <stdlib.h>
+#include <stdlib.h>
 #include "lists.h"
 /**
  * free_listint2 - Frees list.
