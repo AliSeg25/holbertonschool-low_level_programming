@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * print_listint - Prints all the elements of a listint_t list.
+ * print_listint - Write a function that prints all the elements of a listint_t
  * @h: A pointer
+ * Return: (l)
  */
 size_t print_listint(const listint_t *h)
 {
