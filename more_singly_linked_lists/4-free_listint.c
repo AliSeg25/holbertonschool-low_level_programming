@@ -5,9 +5,9 @@
  * free_listint - Frees list.
  * @head: a pointer
  */
-void free_listint(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *temp;
+	listint_t *temp;
 
 	while (head != NULL)
 	{
