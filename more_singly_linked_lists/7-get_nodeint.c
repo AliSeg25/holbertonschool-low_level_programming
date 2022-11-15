@@ -4,7 +4,7 @@
  * of a listint_t linked list, and returns the head node’s data (n).
  * @head: A pointer.
  * @index: The index.
- * Return:
+ * Return: (NULL) OU (head)
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
