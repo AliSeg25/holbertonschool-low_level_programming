@@ -37,6 +37,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 
 	newli->next = temp->next;
+	printf("%d , %d ", newli->n temp->n);
 	temp->next = newli;
 
 	return (newli);
