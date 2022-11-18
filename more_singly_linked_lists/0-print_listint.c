@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
  * print_listint - Write a function that prints all the elements.
- * @h: A pointer
+ * @h: A pointer.
  * Return: (l)
  */
 size_t print_listint(const listint_t *h)
