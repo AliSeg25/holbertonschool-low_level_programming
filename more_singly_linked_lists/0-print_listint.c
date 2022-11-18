@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * print_listint - Write a function that prints all the elements of a listint_t
+ * print_listint - Write a function that prints all the elements.
  * @h: A pointer
  * Return: (l)
  */
