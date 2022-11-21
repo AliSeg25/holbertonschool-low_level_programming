@@ -3,18 +3,18 @@
 #include <stdlib.h>
 /**
  * close_file - Closes file descriptors.
- * @file: The file closed.
+ * @dfile: The file descriptor closed.
  * Return: ()
  */
-void close_file(char *file)
+void close_file(int dfile)
 {
-	int fi;
+	int dfi;
 
-	fi = close(file);
+	dfi = close(dfile);
 
-	if (fi == -1)
+	if (dfi == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dfi);
 		exit(100);
 	}
 }
