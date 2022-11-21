@@ -21,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	o = open(filename,  O_RDONLY);/*on ouvre le fichier en lecture*/
 	r = read(o, printl, letters);/*lire juqu'a count octets (letters)*/
-	w = write(STDIN_FILENO, printl, r);/*Ecrit jusqu'a tant de octet(r)*/
+	w = write(STDOUT_FILENO, printl, r);/*Ecrit jusqu'a tant de octet(r)*/
 
 
 	if (o == -1 || r == -1 || w != r)
