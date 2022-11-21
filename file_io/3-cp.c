@@ -85,4 +85,5 @@ int main(int argc, char *argv[])
 	}
 
 	free(buffer);
+	return(0);
 }
