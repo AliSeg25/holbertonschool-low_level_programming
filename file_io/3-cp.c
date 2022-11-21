@@ -37,3 +37,50 @@ char *alloc_memoire(char *file)
 	}
 	return (buffer);
 }
+/**
+ * main - Copies the contents of a file to another file.
+ * @argc: The number of arguments.
+ * @argv: An array to the arguments.
+ */
+int main(int argc, char *argv[])
+{
+	if (argc != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+
+	buffer = alloc_memoire(argv[2]);
+
+	src = open(argv[1], O_RDONLY);
+	r = read(src, buffer, 1024);
+	w = write(src, buffer, 1024);
+
+	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	r = read(from, buffer, 1024);
+
+	while (r > 0)
+	{
+		if (src == -1 || r == -1)
+		{
+			dprintf(STDERR_FILENO,
+				"Error: Can't read from file %s\n", argv[1]);
+			free(buffer);
+			exit(98);
+		}
+		w = write(dest, buffer, r);
+
+		if (dest == -1 || w == -1)
+		{
+			dprintf(STDERR_FILENO,
+				"Error: Can't write to %s\n", argv[2]);
+			free(buffer);
+			exit(99);
+		}
+
+		r = read(dest, buffer, 1024);
+		dest = open(argv[2], O_WRONLY | O_APPEND);
+	}
+
+	free(buffer);
+}
