@@ -84,6 +84,8 @@ int main(int argc, char *argv[])
 		dest = open(argv[2], O_WRONLY | O_APPEND);
 	}
 
+	close_file(src);
+	close_file(dest);
 	free(buffer);
 	return(0);
 }
