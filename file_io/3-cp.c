@@ -59,7 +59,6 @@ int main(int argc, char *argv[])
 	w = write(src, buffer, 1024);
 
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	r = read(src, buffer, 1024);
 
 	while (r > 0)
 	{
