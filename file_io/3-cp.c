@@ -44,6 +44,8 @@ char *alloc_memoire(char *file)
  */
 int main(int argc, char *argv[])
 {
+	char *buffer;
+	int dest, src, r, w;
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
