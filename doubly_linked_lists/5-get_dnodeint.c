@@ -1,11 +1,11 @@
 #include "lists.h"
 /**
- * free_dlistint -  Write a function that frees a dlistint_t list.
+ * get_dnodeint_at_index -  Write a function that frees a dlistint_t list.
  * @head: The pointeur
  * @index: The index a return
  * Return: The index ()
  */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	while (head < index)
 	{
