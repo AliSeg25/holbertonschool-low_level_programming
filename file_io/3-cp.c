@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 
-		r = read(dest, buffer, 1024);
+		r = read(from, buffer, 1024);
 		dest = open(argv[2], O_WRONLY | O_APPEND);
 	}
 
