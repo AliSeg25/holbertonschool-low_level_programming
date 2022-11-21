@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+65;6003;1c#include <stdio.h>
 #include <stdlib.h>
 /**
  * close_file - Closes file descriptors.
@@ -46,20 +46,17 @@ int main(int argc, char *argv[])
 {
 	char *buffer;
 	int dest, src, r, w;
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	buffer = alloc_memoire(argv[2]);
-
 	src = open(argv[1], O_RDONLY);
 	r = read(src, buffer, 1024);
 	w = write(src, buffer, 1024);
-
 	dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
 	while (r > 0)
 	{
 		if (src == -1 || r == -1)
@@ -82,9 +79,8 @@ int main(int argc, char *argv[])
 		r = read(src, buffer, 1024);
 		dest = open(argv[2], O_WRONLY | O_APPEND);
 	}
-
 	close_file(src);
 	close_file(dest);
 	free(buffer);
-	return(0);
+	return (0);
 }
