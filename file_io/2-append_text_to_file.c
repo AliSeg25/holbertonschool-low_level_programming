@@ -1,5 +1,5 @@
 #include "main.h"
-65;6003;1c#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * append_text_to_file - Create a function that creates a file.
