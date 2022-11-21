@@ -5,7 +5,7 @@
  * @n: to add new node
  * Return: The number of nodes in the list.
  */
-dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
 
