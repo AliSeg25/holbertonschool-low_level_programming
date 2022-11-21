@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -5,7 +6,7 @@
  * @file: The file closed.
  * Return: ()
  */
-vois close_file(char *file)
+void close_file(char *file)
 {
 	int fi;
 
