@@ -10,7 +10,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	/*hash_table_t *new;new allocated square new value*/
 	char *copy_value;/*variable copy value*/
-	unsigned long int index;
+	unsigned long int index, i;
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
@@ -22,12 +22,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *)key, ht->size)
 		;/*We recover the index of the key*/
 
-	for (index; ht->array[index]; index++)
+	for (i = index; ht->array[i]; i++)
 	{
-		if (strcmp(ht->array[index]->key, key) == 0)/*check good key*/
+		if (strcmp(ht->array[i]->key, key) == 0)/*check good key*/
 		{
-			free(ht->array[index]->value);/*Remove value back new*/
-			ht->array[index]->value = copy_value;
+			free(ht->array[i]->value);/*Remove value back new*/
+			ht->array[i]->value = copy_value;
 			return (1);/*if its working*/
 		}
 	}
