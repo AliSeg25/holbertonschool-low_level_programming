@@ -6,7 +6,7 @@
  * @value: Is the value associated.
  * Return: (1) it succeeded else (0).
  */
-int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_table_t new;/*new allocated square new value*/
 	char *copy_value;/*variable copy value*/
