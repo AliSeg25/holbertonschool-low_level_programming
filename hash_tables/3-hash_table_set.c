@@ -8,7 +8,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_table_t new;/*new allocated square new value*/
+	/*hash_table_t *new;new allocated square new value*/
 	char *copy_value;/*variable copy value*/
 	unsigned long int index;
 
@@ -31,4 +31,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			return (1);/*if its working*/
 		}
 	}
+	return (1);
 }
