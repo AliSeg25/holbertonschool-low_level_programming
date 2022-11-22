@@ -8,28 +8,44 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	/*hash_table_t *new;new allocated square new value*/
-	char *copy_value;/*variable copy value*/
+	hash_table_t *new;
+	char *copy_value;
 	unsigned long int index, i;
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
 
-	copy_value = strdup(value);/*we copy value*/
+	copy_value = strdup(value);
 	if (copy_value == NULL)
 		return (0);
 
-	index = key_index((const unsigned char *)key, ht->size)
-		;/*We recover the index of the key*/
+	index = key_index((const unsigned char *)key, ht->size);
 
 	for (i = index; ht->array[i]; i++)
 	{
-		if (strcmp(ht->array[i]->key, key) == 0)/*check good key*/
+		if (strcmp(ht->array[i]->key, key) == 0)
 		{
-			free(ht->array[i]->value);/*Remove value back new*/
+			free(ht->array[i]->value);
 			ht->array[i]->value = copy_value;
-			return (1);/*if its working*/
+			return (1);
 		}
 	}
+
+	new = malloc(sizeof(hash_table_set));
+	if (new == NULL)
+		return (0);
+
+	new->key = strdup(key);
+	if (new->key == NULL)
+	{
+		free(new);
+		return (0);
+	}
+
+	new->value = copy_value;
+	new->next  = ht->array[index];
+
+	ht->array[index] = new;
+
 	return (1);
 }
