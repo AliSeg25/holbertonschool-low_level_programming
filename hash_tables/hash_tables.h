@@ -17,7 +17,7 @@ typedef struct hash_node_s
 	char *key;
 	char *value;
 	struct hash_node_s *next;
-}hash_node_t;
+} hash_node_t;
 
 /**
  * struct hash_table_s - Hash table data structure
