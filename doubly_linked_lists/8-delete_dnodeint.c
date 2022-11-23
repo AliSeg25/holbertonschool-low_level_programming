@@ -8,7 +8,7 @@
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *tmp = *head;
-	dlistint_t *tmpidx;
+	/**	dlistint_t *tmpidx;*/
 	unsigned int node;
 
 	if (*head == NULL)
