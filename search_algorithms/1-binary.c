@@ -16,25 +16,26 @@ int binary_search(int *array, size_t size, int value)
 
 	while (left <= right)
 	{
-		size_t pivot = (left + right) / 2;
+		size_t mid = (left + right) / 2;
 		size_t i;
 
 		printf("Searching in array: ");
 
 		for (i = left; i <= right; i++)
-			printf("%d, ", array[i]);
+		{
+			printf("%d", array[i]);
+			if (i != right)
+				printf(", ");
+			else
+				printf("\n");
+		}
 
-		printf("\n");
-
-		printf("Value checked array[%ld] = [%d]\n", pivot, array[pivot]);
-
-		if (array[pivot] == value)
-			return (pivot);
-
-		else if (array[pivot] > value)
-			right = pivot - 1;
+		if (array[mid] < value)
+			left = mid + 1;
+		else if (array[mid] > value)
+			right = mid - 1;
 		else
-			left = pivot + 1;
+			return (mid);
 	}
 
 	return (-1);
