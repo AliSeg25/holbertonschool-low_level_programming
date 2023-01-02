@@ -1,5 +1,4 @@
 #include "search_algos.h"
-
 /**
  * binary_search - Write a function that searches for a value in sortedarray.
  * @array: the array to search.
@@ -21,7 +20,9 @@ int binary_search(int *array, size_t size, int value)
 
 		printf("Searching in array: ");
 
-		for (size_t i = left; i <= right; i++)
+		size_t i;
+
+		for (i = left; i <= right; i++)
 			printf("%d, ", array[i]);
 
 		printf("\n");
