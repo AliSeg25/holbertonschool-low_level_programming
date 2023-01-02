@@ -1,5 +1,5 @@
 #include "search_algos.h"
-65;6003;1c/**
+/**
  * binary_search - Write a function that searches for a value in sortedarray.
  * @array: the array to search.
  * @size: the size of the array.
