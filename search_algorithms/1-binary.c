@@ -16,7 +16,7 @@ int binary_search(int *array, size_t size, int value)
 
 	while (left <= right)
 	{
-		size_t pivot = (left + right) / 2;
+		int pivot = (left + right) / 2;
 
 		printf("Searching in array: ");
 
